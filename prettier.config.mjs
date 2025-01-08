@@ -8,9 +8,10 @@ const config = {
   singleQuote: true,
   trailingComma: 'es5',
   bracketSpacing: true,
-  importOrder: ['^react(.*)$', '^next(.*)$', '<THIRD_PARTY_MODULES>', '^@core/(.*)$', '^[./]'],
+  importOrder: ['^react(.*)$', '^next(.*)$', '<THIRD_PARTY_MODULES>', '^@/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
+  importOrderCaseInsensitive: true,
   plugins: ['@trivago/prettier-plugin-sort-imports'],
 }
 
